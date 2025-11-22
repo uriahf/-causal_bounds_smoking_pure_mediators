@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#causal-question",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#causal-question",
+    "title": "Causal Bounds for Observational Data",
+    "section": "Causal Question",
+    "text": "Causal Question\n\n\nWhat are the bounds on the Individual Treatment Effect (ITE) of smoking 🚬 vs. not smoking 🚭 on COPD 🫁, given only one observed background variable — whether the parents smoke?\nUnder the Monotonicity Assumption, we assume that having smoking parents 😤 can only increase a child’s risk of developing COPD 🫁 through passive exposure."
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "😇 God-Given Counterfactual Data\n\nBy God-Given knowledge we have access to the true counterfactual outcomes for each individual for smoking 🚬 and for not smoking 🚭"
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-1",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-1",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "😇 God-Given Counterfactual Data\n\nBy God-Given knowledge we have access to the true counterfactual outcomes for each individual for smoking 🚬 and for not smoking 🚭\nThis gives us 4 Compliers: people who get COPD only if they smoke, and avoid it otherwise. It also goes by the name PNS: Probability of Necessity and Sufficiensy:\n\n\\(\\text{PNS} = \\frac{4}{16} = 0.25\\)"
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-2",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-2",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "😈 Observed Data\n\nBy God-Given knowledge we have access to the true counterfactual outcomes for each individual for smoking 🚬 and for not smoking 🚭\nThis gives us 4 Compliers: people who get COPD only if they smoke, and avoid it otherwise. It also goes by the name PNS: Probability of Necessity and Sufficiensy:\n\n\\(\\text{PNS} = \\frac{4}{16} = 0.25\\)\n\nIn real life we can analyse only the observed outcomes, so we can never know the true Individual Treatment Effect. But fortunately, we can use Causal Bounds."
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-3",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-3",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "Bounds PNS\n\\[ 0 \\le \\text{PNS} \\le \\]\n\nIn order to bound PNS we need to count the possible proportion of Compliers:"
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-4",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-4",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "Bounds PNS\n\\[ 0 \\le \\text{PNS} \\le \\frac{4}{16} + \\]\n\nIn order to bound PNS we need to count the possible proportion of Compliers:\nThe total number of observed non-events without treatment, they might be Compliers or Never-Takers."
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-5",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-5",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "Bounds PNS\n\\[ 0 \\le \\text{PNS} \\le \\frac{4}{16} + \\frac{7}{16} \\]\n\nIn order to bound PNS we need to count the possible proportion of Compliers:\nThe total number of observed non-events without treatment, they might be Compliers or Never-Takers.\nThe total number of observed events with treatment, they might be Compliers or Always-Takers."
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-6",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-6",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "Bounds PNS\n\\[ 0 \\le \\text{PNS} \\le \\frac{11}{16} \\] Now we know the bounds of the PNS.\nIt resonates with our true “God-Given” PNS:\n\\[ 0 \\le \\text{PNS} = \\frac{4}{16} \\le \\frac{11}{16} \\]"
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-7",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-7",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "Bounds PNS for Subpopulations\n\\[ 0 \\le \\text{PNS | Smoking-Parents} \\le  \\text{?}\\] \\[ 0 \\le \\text{PNS | Non-Smoking-Parents} \\le  \\text{?}\\]\nIn order to bound PNS we need to count the possible proportion of Compliers within each Sub-population."
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-8",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-8",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "Non-Smoking-Parents\n\\[\\small{0 \\le \\text{PNS | Non-Smoking-Parents} \\le  \\frac{4}{6}}\\]\n\n\n\n\n\n\n\nSmoking Parents\n\\[\\small{0 \\le \\text{PNS | Smoking-Parents} \\le  \\frac{7}{10}}\\]"
+  },
+  {
+    "objectID": "causal_bounds_smoking_example_pure_mediators.html#section-9",
+    "href": "causal_bounds_smoking_example_pure_mediators.html#section-9",
+    "title": "Causal Bounds for Observational Data",
+    "section": "",
+    "text": "Non-Smoking-Parents\n\\[\\small{0 \\le \\text{PNS | Non-Smoking-Parents = } \\frac{2}{6}  \\le  \\frac{4}{6}}\\]\n\n\n\n\n\n\n\nSmoking Parents\n\\[\\small{0 \\le \\text{PNS | Smoking-Parents = } \\frac{2}{10} \\le  \\frac{7}{10}}\\]"
+  }
+]
